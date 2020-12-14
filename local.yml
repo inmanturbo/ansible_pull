@@ -15,16 +15,6 @@
        - software-properties-common
        - cockpit
        - wget
+       - neofetch
 
-  - name: Just ensuring the repo checkout exists
-    git:
-      repo: 'https://github.com/zsh-users/zsh-autosuggestions'
-      dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-      update: no
-
-  - name: Just ensuring the repo checkout exists
-    git:
-      repo: 'https://github.com/zsh-users/zsh-syntax-highlighting'
-      dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-      update: no
 
