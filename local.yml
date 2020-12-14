@@ -2,19 +2,11 @@
   connection: local
   become: true
 
+  pre_tasks:
+    - name: update repos
+      apt:
+        update_cache: yes
+      changed_when: False
+  
   tasks:
-  - name: Install packages
-    apt:
-      name: 
-       - htop
-       - zsh
-       - apt-transport-https
-       - ca-certificates
-       - curl
-       - gnupg-agent
-       - software-properties-common
-       - cockpit
-       - wget
-       - neofetch
-
-
+    - include: tasks/packages.yml
