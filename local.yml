@@ -1,4 +1,23 @@
 - hosts: localhost
+  roles:
+    - role: gantsign.antigen
+      users:
+        - username: inman
+          antigen_libraries:
+            - name: oh-my-zsh
+          antigen_theme:
+            name: robbyrussell
+          antigen_bundles:
+            # Bundles from the default repo (robbyrussell's oh-my-zsh).
+            - name: git
+            - name: pip
+            - name: command-not-found
+            # Syntax highlighting bundle.
+            - name: zsh-syntax-highlighting # `name` is required (any valid file name will do so long as it's unique for the bundles)
+              url: zsh-users/zsh-syntax-highlighting
+            - name: zsh-autosuggestions # `name` is required (any valid file name will do so long as it's unique for the bundles)
+              url: zsh-users/zsh-autosuggestions
+    
   connection: local
   become: true
 
@@ -14,4 +33,6 @@
        - gnupg-agent
        - software-properties-common
        - cockpit
+       - wget
+       - chsh
 
