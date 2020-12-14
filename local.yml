@@ -15,7 +15,6 @@
        - software-properties-common
        - cockpit
        - wget
-       - chsh
 
   - name: Just ensuring the repo checkout exists
     git:
