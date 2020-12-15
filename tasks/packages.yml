@@ -1,4 +1,5 @@
 - name: Install packages
+  when: ansible_distribution in ["Debian", "Ubuntu"]
   apt:
     name: 
        - htop
