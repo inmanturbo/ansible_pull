@@ -19,6 +19,7 @@
        - virtinst
        - libvirt-daemon
        - virt-manager
+       - ifconfig
 
 
 
