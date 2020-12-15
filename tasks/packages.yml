@@ -9,6 +9,7 @@
        - gnupg-agent
        - software-properties-common
        - cockpit
+       - cockpit-machines
        - wget
        - neofetch
        - qemu-kvm
