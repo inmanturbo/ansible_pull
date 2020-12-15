@@ -20,7 +20,5 @@
        - virtinst
        - libvirt-daemon
        - virt-manager
-       - ifconfig
-
-
+       - net-tools
 
