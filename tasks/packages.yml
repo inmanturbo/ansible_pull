@@ -21,4 +21,5 @@
        - libvirt-daemon
        - virt-manager
        - net-tools
+       - nfs-common
 
